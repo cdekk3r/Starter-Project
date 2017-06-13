@@ -1,8 +1,9 @@
 (function() {
-    function HomeCtrl() {
+    function HomeCtrl(DataBase) {
+        this.database = DataBase;
     }
 
     angular
         .module('blocChat')
-        .controller('HomeCtrl', [HomeCtrl]);
+        .controller('HomeCtrl', ['DataBase', HomeCtrl]);
 })();
