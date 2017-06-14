@@ -1,4 +1,8 @@
 <!DOCTYPE html>
 <h1>Home Page</h1>
-<div ng-repeat='room in home.database.rooms'>{{room.$value}}
+<div id="rooms" ng-repeat='room in home.database.rooms'>{{room.$value}}
 </div>
+<form id="add-room" ng-submit="home.database.add(room)">
+    <input type="text" ng-model="room" placeholder="Create a new room">
+    <input type="submit" value="+">
+</form>

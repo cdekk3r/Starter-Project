@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    background-color: grey;
+}
+
+h1 {
+
+}
+
+#rooms {
+  margin: .5rem;
+}
