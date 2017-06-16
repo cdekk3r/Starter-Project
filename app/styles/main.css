@@ -4,13 +4,41 @@ html {
 }
 
 body {
-    background-color: grey;
+    background-color: #628395;
 }
 
 h1 {
 
 }
 
+.room-container {
+    position: relative;
+    background-color: #DBAD6A;
+    float:left;
+    width: 18%;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 3px;
+    margin-left: 1em;
+}
+
+.message-container  {
+    width: 1400px;
+    height: 800px;
+    background-color: #C5AFA0;
+    float: right;
+    margin-right: 1.5rem;
+    border-radius: 3px;
+}
+
 #rooms {
   margin: .5rem;
+  padding-left: 1rem;
+  background-color: #CF995F;
+  width:90%;
+  border-radius: 2px;
+}
+
+#add-room {
+  margin-left: .5em;
 }
