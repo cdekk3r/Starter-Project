@@ -2,7 +2,7 @@
 <h1>Home Page</h1>
 <section class="room-container">
     <div class="room-list" ng-repeat='room in home.database.rooms'>
-        <a class="room" ng-click="home.message.getByRoomId(roomId)">{{room.$value}}</a>
+        <a class="room" ng-click="home.message.getByRoomId(room.$id)">{{room.$value}}</a>
     </div>
     <form id="add-room" ng-submit="home.database.add(room)">
         <input type="text" ng-model="room" placeholder="Create a new room">
@@ -10,6 +10,5 @@
     </form>
 </section>
 <section class="message-container">
-    <div ng-repeat="messages in home.message.messages">
-    </div>
+    <div ng-repeat="message in home.message.messages">{{message.username}}:{{message.content}}</div>
 </section>
