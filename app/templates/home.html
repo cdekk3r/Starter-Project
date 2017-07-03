@@ -12,3 +12,9 @@
 <section class="message-container">
     <div ng-repeat="message in home.message.messages">{{message.username}}:{{message.content}}</div>
 </section>
+<section>
+    <form id="send-message" ng-submit="home.message.send(message)">
+        <input type="text" ng-model="message" placeholder="Type message here" style="width:90%">
+        <input type="submit" value="Send">
+    </form>
+</section>

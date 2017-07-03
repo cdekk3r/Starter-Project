@@ -30,7 +30,7 @@ h1 {
 }
 
 .message-container  {
-    width: 1400px;
+    width: 75%;
     height: 800px;
     background-color: #C5AFA0;
     float: right;
@@ -42,10 +42,13 @@ h1 {
   margin: .5rem;
   padding: .5rem;
   background-color: #CF995F;
-  width:90%;
   border-radius: 2px;
 }
 
 #add-room {
   margin-left: .5em;
+}
+
+#send-message {
+  margin-left: 23.5%;
 }
